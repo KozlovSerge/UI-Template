@@ -2,7 +2,7 @@
   <div class="mb-4">
     <button type="button" *ngFor="let item of kit; let i = index"
       [ngClass]="[selectedExampleIndex === i ? 'bg-primary text-white' : 'text-primary', 'btn', 'btn-light', 'mr-2', 'mb-2']"
-      (click)="setExample(i)">
+      (click)="setExample(i, item)">
       {{ item.name }}
     </button>
   </div>
@@ -22,7 +22,8 @@
       <p class="mb-0">{{ example.description }}</p>
     </div>
     <div class="card-body">
-      <div [ngSwitch]="selectedExampleIndex">
+      <router-outlet></router-outlet>
+      <!-- <div [ngSwitch]="selectedExampleIndex">
         <kit-antd-button-example *ngSwitchCase="0"></kit-antd-button-example>
         <kit-antd-icon-example *ngSwitchCase="1"></kit-antd-icon-example>
         <kit-antd-grid-example *ngSwitchCase="2"></kit-antd-grid-example>
@@ -77,7 +78,7 @@
         <kit-antd-anchor-example *ngSwitchCase="51"></kit-antd-anchor-example>
         <kit-antd-backtop-example *ngSwitchCase="52"></kit-antd-backtop-example>
         <kit-antd-divider-example *ngSwitchCase="53"></kit-antd-divider-example>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

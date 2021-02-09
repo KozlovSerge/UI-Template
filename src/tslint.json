@@ -24,6 +24,10 @@
         "kit"
       ],
       "kebab-case"
-    ]
+    ],
+    "semicolon": [
+			true,
+			"always"
+		]
   }
 }
