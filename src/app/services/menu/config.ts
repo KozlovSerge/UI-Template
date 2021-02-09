@@ -212,7 +212,7 @@ export const getMenuData: any[] = [
     title: 'Ant Design',
     key: 'antDesign',
     icon: 'fe fe-bookmark',
-    url: '/ui-kits/antd',
+    url: '/ui-kits/antd/Button',
   },
   {
     title: 'Bootstrap',
